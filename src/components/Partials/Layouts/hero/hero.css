@@ -1,0 +1,47 @@
+.sc_hero,
+.sc_hero .grid_container {
+    height  : 80vh;
+    overflow: hidden;
+}
+
+.sc_hero .grid_container {
+    display              : grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap                  : 2rem;
+    align-items          : center;
+}
+
+.sc_hero .content {
+    width           : 100%;
+    max-width       : 65rem;
+    /* margin-top   : 20rem; */
+}
+
+.sc_hero .text {
+    font-weight: 300;
+    font-size  : 2.5rem;
+    line-height: 4.25rem;
+}
+
+.sc_hero .anim img {
+    max-width: 100%;
+}
+
+
+
+@media (max-width: 575.98px) {
+
+    .sc_hero,
+    .sc_hero .grid_container {
+        height: auto;
+    }
+
+    .sc_hero .grid_container {
+        grid-template-columns: 1fr;
+    }
+
+    .sc_hero .content {
+        /* margin-top: 14rem; */
+        margin-top: 8rem;
+    }
+}

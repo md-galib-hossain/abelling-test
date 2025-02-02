@@ -1,0 +1,109 @@
+.do_for_you .left_box {
+    padding-right: 3rem;
+}
+
+.do_for_you .sc_hd_box h1 {
+    font-weight   : 800;
+    font-size     : 4.375rem;
+    line-height   : 5rem;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color         : var(--white);
+}
+
+#doForYou {
+    display: initial;
+}
+
+#doForYou .nav-item:not(:last-of-type) {
+    margin-bottom: 2.25rem;
+}
+
+#doForYou .nav-item {
+    display        : flex;
+    justify-content: flex-start;
+    align-items    : center;
+}
+
+#doForYou .nav-item img {
+    width       : 3.75rem;
+    height      : 3.75rem;
+    margin-right: 3.25rem;
+}
+
+#doForYou .nav-link {
+    font-weight   : 400;
+    font-size     : 2rem;
+    line-height   : 2.375rem;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color         : var(--white);
+    transition    : color .3s ease;
+}
+
+#doForYou .nav-link.active,
+#doForYou .nav-link:hover {
+    color: var(--scyan);
+}
+
+
+#doForYouContent .tab-pane {
+    position: relative;
+}
+
+#doForYouContent .tab-pane::before {
+    position  : absolute;
+    content   : '';
+    top       : 0;
+    left      : 0;
+    width     : 100%;
+    height    : 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0) 65.21%);
+}
+
+#doForYouContent .content {
+    position: absolute;
+    left    : 6.25rem;
+    right   : 6.25rem;
+    bottom  : 4.25rem;
+}
+
+#doForYouContent h3 {
+    font-weight   : 500;
+    font-size     : 3.375rem;
+    line-height   : 3.75rem;
+    letter-spacing: -0.01em;
+}
+
+#doForYouContent p {
+    font-weight   : 300;
+    font-size     : 2rem;
+    line-height   : 2.375rem;
+    letter-spacing: -0.01em;
+    padding       : 2.125rem 0 3.5rem;
+    color         : var(--white);
+}
+
+#doForYouContent a {
+    padding: 1rem 1.75rem;
+}
+
+
+/* do for you for mobile view */
+.dfy_grid {
+    display              : grid;
+    grid-template-columns: 33.33333% 33.33333% 33.33333%;
+    text-align           : center;
+    gap                  : 3rem;
+}
+
+
+@media (max-width: 757.98px) {
+    #doForYouContent .content {
+        position: initial;
+    }
+
+    #doForYouContent .tab-pane img {
+        margin: 4rem 0;
+    }
+}

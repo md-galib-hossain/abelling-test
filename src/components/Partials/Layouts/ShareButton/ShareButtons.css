@@ -1,0 +1,30 @@
+.social_share_buttons {
+    display    : flex;
+    align-items: center;
+}
+
+.social_share_buttons.center {
+    justify-content: center;
+}
+
+.social_share_buttons.right {
+    justify-content: flex-end;
+}
+
+.social_share_buttons>button {
+    cursor: pointer;;
+}
+
+.social_share_buttons>button:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.copy_clipboard {
+    width           : 4.4rem;
+    height          : 4.4rem;
+    font-size       : 3rem;
+    color           : white;
+    border-radius   : .8rem;
+    background-color: var(--dip-blue);
+    margin-bottom   : .8rem;
+}

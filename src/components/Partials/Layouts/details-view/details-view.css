@@ -1,0 +1,47 @@
+.details_view h2.dv_title {
+    font-weight            : 800;
+    font-size              : 4.375rem;
+    line-height            : 5.25rem;
+    letter-spacing         : -0.01em;
+    text-transform         : uppercase;
+    background             : linear-gradient(90deg, #0ABAF2 15.86%, #136AE8 41.44%, #136AE8 60.73%, #0ABAF2 84.72%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip        : text;
+}
+
+.details_view img {
+    width        : 100%;
+    margin       : 7.25rem 0 5.5rem;
+    border-radius: 1.5rem;
+}
+
+.details_view .dv_rich_upload {
+    margin: 3.5rem 0 4.5rem;
+}
+
+.details_view p:not(:last-of-type), .dv_rich_upload img {
+    margin-bottom: 2.25rem;
+}
+
+.details_view ol,
+.details_view ul {
+    padding-left: 2.4rem;
+}
+
+.details_view p,
+.details_view li {
+    font-weight: 300;
+    font-size  : 2.25rem;
+    line-height: 3.5rem;
+    color      : var(--gray);
+}
+
+.details_view strong {
+    font-weight: 400;
+    color      : var(--white);
+}
+
+.dv_rich_upload>p>* {
+    color: var(--gray) !important;
+}

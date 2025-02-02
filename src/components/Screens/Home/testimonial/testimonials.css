@@ -1,0 +1,61 @@
+.tstm_card {
+    /* background             : rgba(255, 255, 255, .5);
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter        : blur(30px); */
+    background   : rgb(25, 26, 29);
+    background   : linear-gradient(354deg, rgba(25, 26, 29, 1) 15%, rgba(27, 31, 69, 1) 91%);
+    border-radius: 1.25rem;
+    padding      : 7.5rem 5.75rem;
+    min-height: 68rem;
+}
+
+.tstm_card img {
+    width        : 8rem;
+    height       : 8rem;
+    border-radius: 50%;
+}
+
+.tstm_card h2 {
+    font-weight   : 800;
+    font-size     : 2.5rem;
+    line-height   : 3rem;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color         : var(--white);
+    margin-top    : 2.75rem;
+}
+
+.tstm_card h6 {
+    font-family   : var(--akrobat);
+    font-weight   : 700;
+    font-size     : 2.125rem;
+    line-height   : 2.25rem;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color         : var(--gray-1);
+}
+
+.tstm_card p {
+    /* font-family: var(--akrobat); */
+    font-weight   : 300;
+    font-size     : 2.75rem;
+    line-height   : 4rem;
+    letter-spacing: -0.01em;
+    color         : var(--scyan);
+    margin-top    : 4.5rem;
+}
+
+@media (max-width: 575.98px) {
+    .sc_testimonial {
+        padding-bottom: 8rem;
+    }
+    .tstm_card {
+        padding: 5.5rem 3.75rem;
+    }
+
+    .tstm_card p {
+        font-size  : 2.4rem;
+        line-height: 3.5rem;
+        margin-top : 3rem;
+    }
+}

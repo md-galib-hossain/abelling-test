@@ -1,0 +1,132 @@
+.large_menu {
+    padding: 0 5rem;
+    display: none;
+}
+
+.large_menu_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.large_menu .logo img {
+    width    : 100%;
+    max-width: 34.8rem;
+}
+
+.large_menu a.button {
+    font-size: 1.625rem;
+    padding  : 1.5rem 3rem;
+}
+
+.large_menu li {
+    display : inline-block;
+    position: relative;
+}
+
+.large_menu li:not(:last-of-type) {
+    margin-right: 5.5rem;
+}
+
+.large_menu a.nav_link {
+    display       : inline-block;
+    font-weight   : 400;
+    font-size     : 1.625rem;
+    line-height   : 2.75rem;
+    color         : var(--white);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding       : 3rem 0;
+}
+
+.large_menu a.nav_link.services{
+    display: flex;
+    align-items: center;
+}
+
+.large_menu a.nav_link svg {
+    width      : 2.5rem;
+    height     : 2.5rem;
+    margin-left: .5rem;
+}
+
+.large_menu .sub_menu {
+    position       : absolute;
+    width          : 30rem;
+    left           : -4rem;
+    top            : 100%;
+    background     : rgba(13, 14, 17, 0.6);
+    backdrop-filter: blur(30px);
+    border-radius  : .5rem;
+    padding        : 2rem 3rem 3rem;
+    opacity        : 0;
+    visibility     : hidden;
+}
+
+.large_menu .sub_menu.cols {
+    width: 44rem;
+    left : -18rem;
+}
+
+.large_menu .menu li:hover .sub_menu {
+    opacity   : 1;
+    visibility: visible;
+}
+
+.large_menu .sub_menu h2 {
+    font-weight   : 500;
+    font-size     : 1.75rem;
+    line-height   : 2.2rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color         : #FFFFFF;
+    margin-bottom : 3rem;
+}
+
+.large_menu .sub_menu a {
+    display       : block;
+    font-weight   : 400;
+    font-size     : 1.75rem;
+    line-height   : 2.125rem;
+    letter-spacing: 0.1em;
+    color         : var(--gray-1);
+}
+
+
+.large_menu .sub_menu a:not(:last-of-type) {
+    margin-bottom: 1.75rem;
+}
+
+.large_menu a.nav_link,
+.large_menu .sub_menu a {
+    transition: color .3s ease;
+}
+
+.large_menu a.nav_link:hover,
+.large_menu .sub_menu a:hover {
+    color: var(--dip-blue);
+}
+
+.large_menu a.nav_link.active,
+.large_menu .sub_menu a.active {
+    color: var(--scyan);
+}
+
+@media(min-width: 1200px){
+    .large_menu{
+        display: block;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    .large_menu li:not(:last-of-type) {
+        margin-right: 2.5rem;
+    }
+    .large_menu a.nav_link {
+        padding: 2.5rem 0;
+    }
+    .large_menu a.button {
+        font-size: 1.625rem;
+        padding: 1rem 2rem;
+    }
+}

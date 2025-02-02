@@ -1,0 +1,130 @@
+.about_hero .head_desc {
+    display: none;
+}
+
+.story_cards_wrapper {
+    display              : grid;
+    grid-template-columns: 50% 50%;
+    grid-gap             : 3rem;
+}
+
+.story_card {
+    border-radius: 1.25rem;
+    background   : #182531;
+    padding      : 5rem 3.5rem;
+}
+
+.story_card .card_head img {
+    width        : 12.5rem;
+    height       : 12.5rem;
+    border-radius: 50%;
+}
+
+.story_card .card_head {
+    display              : grid;
+    grid-template-columns: 12.5rem auto;
+    grid-gap             : 3rem;
+    margin-bottom        : 6rem;
+}
+
+.people_title {
+    display    : inline-block;
+    font-size  : 2.25rem;
+    line-height: 3rem;
+}
+
+.people_desig {
+    font-family   : var(--akrobat);
+    font-weight   : 700;
+    font-size     : 2.125rem;
+    line-height   : 2.25rem;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color         : var(--gray-1)
+}
+
+
+/* our mission vision */
+.sc_mivi.mission {
+    margin-bottom: 5.5rem;
+}
+
+.sc_mivi {
+    background: #182531;
+    padding   : 4.25rem 0;
+    text-align: center;
+}
+
+.sc_mivi img {
+    width        : 8.75rem;
+    height       : 8.75rem;
+    border-radius: 50%;
+    margin-bottom: 3rem;
+    /* border    : 1px solid var(--dip-blue); */
+}
+
+.sc_mivi h2 {
+    font-size  : 3.75rem;
+    line-height: 4.5rem;
+    margin     : 1.875rem 0;
+}
+
+.sc_mivi p {
+    font-size  : 2.5rem;
+    line-height: 3.5rem;
+}
+
+/* team  */
+.team_box_prf_one,
+.team_box_prf_two {
+    display      : grid;
+    margin-bottom: 7rem;
+}
+
+.team_box_prf_one {
+    grid-template-columns: 33.333333% 33.333333%;
+    gap                  : 6rem;
+    /* justify-content   : center; */
+    place-content        : center;
+}
+
+.team_box_prf_two {
+    grid-template-columns: repeat(4, 1fr);
+    gap                  : 3rem;
+}
+
+.team_box_prf_two img {
+    width: 100%;
+}
+
+.team_content h2 {
+    margin-top: 2rem;
+}
+
+
+@media (max-width: 575.98px) {
+    .story_cards_wrapper {
+        grid-template-columns: 100%;
+    }
+
+    .sc_mivi h2 {
+        font-size  : 2.5rem;
+        line-height: 3rem;
+        margin     : 3rem 0 3.5rem;
+    }
+
+    .sc_mivi p {
+        font-size  : 2rem;
+        line-height: 3rem;
+    }
+
+    .team_box_prf_one {
+        grid-template-columns: 100%;
+        gap                  : 3rem;
+    }
+
+    .team_box_prf_two {
+        grid-template-columns: repeat(2, 1fr);
+        gap                  : 3rem;
+    }
+}

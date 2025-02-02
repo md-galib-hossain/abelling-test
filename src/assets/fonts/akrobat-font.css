@@ -1,0 +1,25 @@
+/* @font-face {
+    font-family: 'akrobatextrabold';
+    src: url('Akrobat-ExtraBold.otf');
+    font-weight: normal;
+    font-style: normal;
+} */
+@font-face {
+    font-family: 'akrobatextrabold';
+    src: url('./../../../public/Akrobat-ExtraBold.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* @font-face {
+    font-family: 'akrobatextrabold';
+    src: url('Akrobat-Bold.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'akrobatextrabold';
+    src: url('Akrobat-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+} */

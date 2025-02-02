@@ -1,0 +1,99 @@
+.nwls_wrapper {
+    width              : 100%;
+    max-width          : 1077px;
+    margin             : 0 auto;
+    border-radius      : 2rem;
+    overflow           : hidden;
+    padding            : 4rem;
+    background-image   : url(../../../../assets/images/nwls-bg.png);
+    background-size    : cover;
+    background-position: center center;
+    background-repeat  : no-repeat;
+}
+
+.nwls_content {
+    width     : 100%;
+    max-width : 702px;
+    margin    : 0 auto;
+    text-align: center;
+}
+
+.nwls_content h2 {
+    font-weight   : 800;
+    font-size     : 3.125rem;
+    line-height   : 4.125rem;
+    text-align    : center;
+    letter-spacing: -0.01em;
+    color         : var(--scyan);
+    margin-bottom : 2.25rem;
+}
+
+.nwls_content p {
+    font-family   : var(--akrobat);
+    font-weight   : 800;
+    font-size     : 2.25rem;
+    line-height   : 2.75rem;
+    text-align    : center;
+    letter-spacing: -0.01em;
+    color         : var(--white);
+    margin-bottom : 5rem;
+}
+
+.nwls_form_wrapper {
+    width    : 100%;
+    max-width: 430px;
+    margin   : 0 auto;
+}
+
+.nwls_form {
+    display              : grid;
+    grid-template-columns: 80% 20%;
+    grid-column-gap      : 2rem;
+}
+
+.nwls_form input {
+    font-size       : 1.75rem;
+    line-height     : 2.125rem;
+    letter-spacing  : -0.01em;
+    color           : var(--white);
+    padding         : 1.75rem 3rem;
+    border          : 1px solid rgba(255, 255, 255, 0.4);
+    border-radius   : 5px;
+    background-color: transparent;
+}
+.nwls_form input:focus-visible {
+    outline: 0;
+}
+
+.nwls_form input::placeholder {
+    font-size  : 1.75rem;
+    line-height: 2.125rem;
+    color      : #c4c4c4;
+}
+
+.nwls_form button {
+    border-radius: 5px;
+}
+
+@media (max-width: 575.98px) {
+    .nwls_wrapper {
+        padding: 8rem 1rem;
+    }
+    .nwls_content h2 {
+        margin-bottom: 5rem;
+    }
+    .nwls_content p {
+        margin-bottom: 7rem;
+    }
+    .nwls_form {
+        display: block;
+        text-align: center;
+    }
+    .nwls_form input {
+        width: 100%;
+    }
+    .nwls_form button {
+        padding: 1.5rem 3rem;
+        margin-top: 4rem;
+    }
+}

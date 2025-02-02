@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "src": "wca-1",
+        "title": "Designed for Quality",
+        "desc": "Training data quality dictates model quality. So we design our task and workforce focused on high-quality labelling, not just speed."
+    },
+    {
+        "id": 2,
+        "src": "wca-2",
+        "title": "Affordable",
+        "desc": "Training data quality dictates model quality. So we design our task and workforce focused on high-quality labelling, not just speed."
+    },
+    {
+        "id": 3,
+        "src": "wca-3",
+        "title": "Focus on Quality",
+        "desc": "Training data quality dictates model quality. So we design our task and workforce focused on high-quality labelling, not just speed."
+    },
+    {
+        "id": 4,
+        "src": "wca-4",
+        "title": "Skilled Labellers",
+        "desc": "Training data quality dictates model quality. So we design our task and workforce focused on high-quality labelling, not just speed."
+    }
+]

@@ -1,0 +1,121 @@
+.standard_pricing .grid_container {
+  display              : grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap                  : 3.2rem;
+}
+
+.sp_tab_box {
+  width          : 100%;
+  background     : rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(30px);
+  border-radius  : 1.25rem;
+  overflow       : hidden;
+}
+
+.sp_tab_box .title {
+  display       : block;
+  font-family   : var(--rubik), sans-serif;
+  font-weight   : 300;
+  font-size     : 2.5rem;
+  line-height   : 3rem;
+  text-transform: uppercase;
+  color         : var(--scyan);
+  text-align    : center;
+  padding       : 4rem 3.25rem 2.5rem;
+  border-bottom : 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.sp_tab_box .title>span {
+  display: block;
+}
+
+.sp_tab_box .title img {
+  margin-bottom: 2rem;
+  height       : 61px;
+}
+
+.sp_tab_box .con_text {
+  padding: 2.5rem 4.75rem 4rem;
+}
+
+/* for rich text upload */
+.rich_upload p:not(:last-child) {
+  margin-bottom: 4.2rem;
+}
+
+.rich_upload p,
+.rich_upload li {
+  font-weight: 300;
+  font-size  : 1.8rem;
+  line-height: 2.8rem;
+  color      : var(--gray);
+}
+
+.rich_upload ol,
+.rich_upload ul {
+  padding-left: 2.4rem;
+  list-style  : none;
+  margin      : 4.2rem 0;
+}
+
+.rich_upload ol>li,
+.rich_upload ul>li {
+  position: relative;
+}
+
+.rich_upload li:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+.rich_upload ol>li::before,
+.rich_upload ul>li::before {
+  content      : "";
+  position     : absolute;
+  top          : 1rem;
+  left         : -1.2rem;
+  width        : 0.5rem;
+  height       : 0.5rem;
+  border-radius: 50%;
+  background   : var(--white);
+}
+
+.rich_upload strong {
+  font-weight: 700;
+  color      : var(--white);
+}
+
+/* .rich_upload {
+}
+
+.rich_upload {
+} */
+
+/* price factors */
+.factors_cards {
+  display              : grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap             : 3rem;
+}
+
+@media (max-width: 575.98px) {
+
+  /* new design */
+  .sp_tab_box .title {
+    padding: 3rem 1.5rem 2rem;
+  }
+
+  .sp_tab_box .con_text {
+    padding: 2rem 2rem 3rem;
+  }
+
+  .standard_pricing .grid_container {
+    grid-template-columns: 1fr;
+  }
+
+  /* price factors */
+  .factors_cards {
+    display              : grid;
+    grid-template-columns: 1fr;
+    grid-gap             : 3rem;
+  }
+}

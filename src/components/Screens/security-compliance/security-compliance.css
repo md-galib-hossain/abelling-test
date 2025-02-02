@@ -1,0 +1,75 @@
+.security_icons_wrapper {
+    width        : 100%;
+    max-width    : 110rem;
+    margin       : 0 auto;
+    border-radius: 2rem;
+    background   : #182531;
+    padding      : 8rem 9.5rem;
+    margin-top   : 25rem;
+}
+
+
+.security_icons_wrapper h3,
+.sc_cards_section .sc_cards h6 {
+    font-family   : var(--akrobat);
+    font-weight   : 800;
+    font-size     : 2.5rem;
+    line-height   : 3rem;
+    text-align    : center;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+}
+
+.security_icons_wrapper h3 {
+    color        : var(--white);
+    margin-bottom: 8.25rem;
+}
+
+.security_icons_wrapper .security_icons {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.security_icons_wrapper .security_icons,
+.sc_cards_section .sc_cards {
+    display: grid;
+    gap    : 6.25rem;
+}
+
+.security_icons_wrapper .security_icons img {
+    width: 100%;
+}
+
+.sc_cards_section .sc_cards {
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+}
+
+.sc_cards_section .sc_cards svg {
+    width: 6rem;
+    height: 6rem;
+}
+
+.sc_cards_section .sc_cards h6 {
+    color     : #D6DAE5;
+    margin-top: 2.5rem;
+}
+
+
+@media (max-width: 575.98px) {
+    .security_icons_wrapper {
+        padding: 5.4rem 3.25rem;
+        margin-top: 14rem;
+    }
+    .security_icons_wrapper .security_icons {
+        grid-template-columns: 1fr;
+    }
+    .sc_cards_section .sc_cards {
+        column-gap: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+    }
+   .sc_cards_section .sc_cards h6 {
+        font-size: 2.25rem;
+        line-height: 2.75rem;
+    }
+}

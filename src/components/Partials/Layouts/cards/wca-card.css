@@ -1,0 +1,30 @@
+.wca_card {
+    padding      : 4rem 2rem;
+    border       : 1px solid var(--dip-blue);
+    border-radius: 1rem;
+}
+
+.wca_card img {
+    width     : auto;
+    max-height: 7.5rem;
+}
+
+.wca_card h2 {
+    font-weight   : 800;
+    font-size     : 3rem;
+    line-height   : 4.75rem;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    margin        : 6.5rem 0 1.75rem;
+}
+
+.wca_card p {
+    font-weight: 300;
+    font-size  : 1.875rem;
+    line-height: 3.25rem;
+    color      : var(--gray);
+}
+.wca_card p span {
+    font-weight: 600;
+    color: var(--white);
+}

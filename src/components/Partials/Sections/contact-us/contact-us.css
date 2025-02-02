@@ -1,0 +1,112 @@
+.contact_us {
+    background-image   : url(../../../../assets/images/contact-bg.png);
+    /* background-image   : url(../../../../../public/contact-bg.png); */
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    background-position: center center;
+    padding            : 4rem 0;
+}
+
+.contact_box {
+    display              : grid;
+    grid-template-columns: 50% 50%;
+    gap             : 2rem;
+}
+
+.contact_box .content {
+    align-self: center;
+}
+
+.contact_box .content h6 {
+    font-size     : 1.75rem;
+    line-height   : 2.75rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color         : var(--white);
+}
+
+.contact_box .content h1 {
+    font-weight   : 800;
+    font-size     : 7.5rem;
+    line-height   : 8.25rem;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color         : var(--white);
+    margin: 1.5rem 0 1rem;
+}
+
+.contact_box .content p {
+    font-weight: 300;
+    font-size  : 2rem;
+    line-height: 3rem;
+    color      : var(--gray);
+}
+
+.contact_box .content p span {
+    color         : var(--white);
+}
+
+.contact_form>*:not(:last-child) {
+    margin-bottom: 2rem;
+}
+
+.contact_form {
+    width           : 100%;
+    max-width       : 51.5rem;
+    margin-left     : auto;
+    background-color: var(--black);
+    border-radius   : 2rem;
+    padding         : 4rem;
+}
+
+.contact_form .input_field,
+.contact_form textarea {
+    width           : 100%;
+    font-weight     : 400;
+    font-size       : 15px;
+    line-height     : 24px;
+    letter-spacing  : -0.02em;
+    color           : var(--gray);
+    padding         : 2rem;
+    background-color: #111316;
+    border          : 1px solid var(--dip-blue);
+    border-radius   : .75rem;
+}
+
+.contact_form .button {
+    display: block;
+    width  : 100%;
+    padding: 2rem;
+}
+
+.contact_form .error {
+    padding-top: 1rem;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    color: var(--scyan);
+}
+
+/* sweetalert2 customize */
+.swal2-popup.swal2-toast {
+    padding: 5rem 4rem;
+}
+
+
+.swal2-popup.swal2-toast .swal2-title {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+}
+
+@media (max-width: 575.98px) {
+    .contact_box {
+        grid-template-columns: 100%;
+        gap: 8rem;
+    }
+    .contact_box .content h6 {
+        font-weight: 300;
+    }
+    .contact_box .content h1 {
+        font-size: 3.75rem;
+        line-height: 5rem;
+    }
+}

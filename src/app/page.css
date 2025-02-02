@@ -1,0 +1,52 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+dl,
+ol,
+ul {
+	margin-bottom: 0;
+	padding-left: 0;
+}
+
+li {
+	list-style: none;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin-bottom: 0;
+}
+.h1,
+.h2,
+h1,
+h2 {
+	font-family: var(--akrobat);
+}
+
+a {
+	text-decoration: none;
+}
+
+button {
+	border: 0;
+	background-color: transparent;
+}

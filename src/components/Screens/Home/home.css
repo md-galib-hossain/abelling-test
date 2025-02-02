@@ -1,0 +1,265 @@
+/* swiper slider next prev button */
+.swiper-button-prev,
+.swiper-button-next {
+    position       : absolute;
+    width          : 6rem;
+    height         : 6rem;
+    border         : 1px solid var(--dip-blue);
+    border-radius  : 50%;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    cursor         : pointer;
+    opacity        : 0.7;
+    z-index        : 2;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    opacity: 1;
+}
+
+.swiper-button-prev:before,
+.swiper-button-next:before {
+    display            : inline-block;
+    content            : '';
+    width              : 2.75rem;
+    height             : 2.75rem;
+    background-size    : 2.75rem 2.75rem;
+    background-repeat  : no-repeat;
+    background-position: center;
+}
+
+.swiper-button-prev:before {
+    background-image: url(../../../assets/icons/prev-arrow.svg);
+}
+
+.swiper-button-next:before {
+    background-image: url(../../../assets/icons/next-arrow.svg);
+}
+
+/* video section */
+.video_header {
+    background   : var(--black);
+    padding      : 8rem 0 4rem;
+    text-align   : center;
+    /* border-top: .5px solid rgba(77, 147, 255, .4); */
+}
+
+.video_header .sc_title {
+    display    : inline-block;
+    font-size  : 4rem;
+    line-height: 4rem;
+}
+
+#click-below {
+    color: rgba(169, 169, 169, 0.418);
+}
+
+.video{
+    position: relative;
+}
+
+.video .gradiyent {
+    position  : absolute;
+    top       : 0;
+    left      : 0;
+    width     : 100%;
+    height    : 100%;
+    background: linear-gradient(180deg, rgba(13, 14, 17, 1) 0%, rgba(27, 31, 69, 0.036852240896358524) 25%);
+}
+/* .video .gradiyent1 {
+    position  : absolute;
+    top       : 0;
+    left      : 0;
+    width     : 100%;
+    height    : 100%;
+    background: rgba(0, 0, 0, .7);
+} */
+
+.video img {
+    width: 100%;
+}
+
+.video .btn_play {
+    position : absolute;
+    top      : 50%;
+    left     : 50%;
+    transform: translate(-50%, -50%);
+    cursor   : pointer;
+}
+
+.video iframe {
+    width : 100%;
+    height: 428px;
+    margin: 0;
+}
+
+.video .sc_title {
+    position  : absolute;
+    top       : 20%;
+    left      : 0;
+    transform : translateY(-20%);
+    width     : 100%;
+    padding   : 2.4rem;
+    text-align: center;
+}
+
+.video_modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.video_modal.show{
+    display: block;
+    opacity: 1;
+}
+
+.video_modal.show .modal_content_wrapper .modal_content{
+    animation: slide-down 0.3s;
+}
+
+.video_modal .modal_content_wrapper{
+    max-width: 800px;
+    width: 100%;
+    margin-inline: auto;
+    height: calc(100% - 3.7rem);
+    display: flex;
+    align-items: center;
+    transform: translateY(-50px);
+    transition: 0.3s;
+}
+
+.video_modal.show .modal_content_wrapper{
+    transform: translateY(0);
+}
+
+.video_modal .modal_content_wrapper .modal_content{
+    width: 100%;
+}
+
+/* why choose abelling */
+.wca_section .grid_container {
+    display              : grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap                  : 1.5rem
+}
+
+.wca_section .wca_card h2 {
+    padding: 1rem 0 1.5rem;
+}
+
+
+/* our work & testimonial section */
+.swiper_container {
+    position: relative;
+}
+
+.swiper_container .swiper-button-prev,
+.swiper_container .swiper-button-next {
+    top      : 50%;
+    transform: translateY(-50%);
+}
+
+.swiper_container .swiper-button-prev {
+    left: -7.5rem;
+}
+
+.swiper_container .swiper-button-next {
+    right: -7.5rem;
+}
+
+
+/* blog */
+.blog_cards_wrapper {
+    display              : grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap             : 3rem;
+}
+
+
+@media (max-width: 575.98px) {
+    /* swiper navigation */
+    .swiper_container .swiper-button-prev,
+    .swiper_container .swiper-button-next {
+        top   : auto;
+        left: auto;
+        bottom: -11.5rem;
+    }
+
+    .swiper_container .swiper-button-prev {
+        right : 12rem;
+    }
+
+    .swiper_container .swiper-button-next {
+        right : 3rem
+    }
+
+    /* why choose abelling */
+    .wca_section .grid_container {
+        grid-template-columns: 1fr;
+        row-gap: 5rem;
+    }
+
+    /* video section */
+    .video_modal .modal_content_wrapper{
+        padding-inline: 0.5rem;
+    }
+    
+    .video {
+        min-height: 40rem;
+        overflow  : hidden;
+    }
+
+    .video img {
+        width : auto;
+        height: 40rem;
+    }
+
+    .video .sc_title {
+        top      : 4%;
+        transform: translateY(-4%);
+    }
+
+    .video .btn_play>svg {
+        width : 5.8rem;
+        height: 5.8rem;
+    }
+
+    /* blog section */
+    .blog_cards_wrapper {
+        grid-template-columns: auto;
+        grid-gap             : 3rem;
+    }
+}
+
+
+
+/* our work & testimonial section */
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}
+
+@media (min-width: 1600px) {
+    /* .container.swiper_container {
+        max-width: 1480px;
+    }
+    .container.swiper_container .swiper {
+        padding-left: 8rem;
+        padding-right: 8rem;
+    } */
+}

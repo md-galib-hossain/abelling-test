@@ -1,0 +1,10 @@
+.get_quote .contact_us {
+    background-image: unset;
+    background: rgba(19, 106, 232, 0.2);
+}
+
+@media (max-width: 575.98px) {
+    .get_quote.pmt-116 {
+        margin-top: 0;
+    }
+}
